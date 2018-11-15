@@ -1,0 +1,28 @@
+
+创建ssh key
+
+1、设置Git的user name和email：
+
+$ git config --global user.name "sstrongChen"
+$ git config --global user.email "artczq@163.com"
+git config --global user.email artczq@163.com
+
+2、获取密匙
+	$ ssh-keygen -t rsa -C "artczq@163.com"
+       
+3、添加id_rsa密钥到ssh
+   则先执行  ：$ssh-agent bash
+   然后再执行：$ssh-add id_rsa
+
+4、在github上添加ssh密钥，这要添加的是“id_rsa.pub”里面的公钥。
+
+5.测试：ssh git@github.com
+
+在github中找到 Account Settings--->Account Admin ,找到一下信息：
+
+Your API token is e97279836f0d415a3954c1193dba522f ---keep it secret! Changing your password will
+
+generate a new token
+
+$ git config --global github.user defnngj      //github 上的用户名
+$ git config --global github.token e97279836f0d415a3954c1193dba522f
