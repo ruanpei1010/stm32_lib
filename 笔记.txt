@@ -1,28 +1,29 @@
+https://git-scm.com/download/win
 
-´´½¨ssh key
+åˆ›å»ºssh key
 
-1¡¢ÉèÖÃGitµÄuser nameºÍemail£º
+1ã€è®¾ç½®Gitçš„user nameå’Œemailï¼š
 
 $ git config --global user.name "sstrongChen"
 $ git config --global user.email "artczq@163.com"
 git config --global user.email artczq@163.com
 
-2¡¢»ñÈ¡ÃÜ³×
+2ã€è·å–å¯†åŒ™
 	$ ssh-keygen -t rsa -C "artczq@163.com"
        
-3¡¢Ìí¼Óid_rsaÃÜÔ¿µ½ssh
-   ÔòÏÈÖ´ĞĞ  £º$ssh-agent bash
-   È»ºóÔÙÖ´ĞĞ£º$ssh-add id_rsa
+3ã€æ·»åŠ id_rsaå¯†é’¥åˆ°ssh
+   åˆ™å…ˆæ‰§è¡Œ  ï¼š$ssh-agent bash
+   ç„¶åå†æ‰§è¡Œï¼š$ssh-add id_rsa
 
-4¡¢ÔÚgithubÉÏÌí¼ÓsshÃÜÔ¿£¬ÕâÒªÌí¼ÓµÄÊÇ¡°id_rsa.pub¡±ÀïÃæµÄ¹«Ô¿¡£
+4ã€åœ¨githubä¸Šæ·»åŠ sshå¯†é’¥ï¼Œè¿™è¦æ·»åŠ çš„æ˜¯â€œid_rsa.pubâ€é‡Œé¢çš„å…¬é’¥ã€‚
 
-5.²âÊÔ£ºssh git@github.com
+5.æµ‹è¯•ï¼šssh git@github.com
 
-ÔÚgithubÖĞÕÒµ½ Account Settings--->Account Admin ,ÕÒµ½Ò»ÏÂĞÅÏ¢£º
+åœ¨githubä¸­æ‰¾åˆ° Account Settings--->Account Admin ,æ‰¾åˆ°ä¸€ä¸‹ä¿¡æ¯ï¼š
 
 Your API token is e97279836f0d415a3954c1193dba522f ---keep it secret! Changing your password will
 
 generate a new token
 
-$ git config --global github.user defnngj      //github ÉÏµÄÓÃ»§Ãû
+$ git config --global github.user defnngj      //github ä¸Šçš„ç”¨æˆ·å
 $ git config --global github.token e97279836f0d415a3954c1193dba522f
